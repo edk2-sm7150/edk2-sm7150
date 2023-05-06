@@ -105,7 +105,6 @@ READ_LOCK_CAP      = TRUE
 READ_LOCK_STATUS   = TRUE
 
 !include F11/inc/APRIORI.inc
-!include F11/inc/sweet.inc
 
   INF MdeModulePkg/Core/Dxe/DxeMain.inf
 
@@ -151,10 +150,6 @@ READ_LOCK_STATUS   = TRUE
   INF F11/F11Dxe/F11Dxe.inf
   INF F11/SimpleFbDxe/SimpleFbDxe.inf
 
-
-
-
-
   #
   # USB Host Support
   #
@@ -189,24 +184,7 @@ READ_LOCK_STATUS   = TRUE
   INF MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf
   INF MdeModulePkg/Universal/Acpi/AcpiPlatformDxe/AcpiPlatformDxe.inf
   INF MdeModulePkg/Universal/Acpi/BootGraphicsResourceTableDxe/BootGraphicsResourceTableDxe.inf
-# INF RuleOverride = ACPITABLE F11/AcpiTables/AcpiTables.inf
-
-
-
-#    FILE FREEFORM = 7E374E25-8E01-4FEE-87F2-390C23C606CD {
-#	SECTION RAW = F11/AcpiTables/mini/dbg2.aml
-#	SECTION RAW = F11/AcpiTables/mini/gtdt.aml
-#	SECTION RAW = F11/AcpiTables/mini/dsdt.aml
-#	SECTION RAW = F11/AcpiTables/mini/madt.aml
-#	SECTION RAW = F11/AcpiTables/mini/facs.aml
-#	SECTION RAW = F11/AcpiTables/mini/facp.aml   
-#	SECTION RAW = F11/AcpiTables/mini/pptt.bin     
-#	SECTION UI = "AcpiTables"
-#  }
-
-
-
-!include F11/inc/acpi.inc
+  # INF RuleOverride = ACPITABLE F11/AcpiTables/AcpiTables.inf
 
   #
   # SMBIOS Support

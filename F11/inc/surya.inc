@@ -1,13 +1,13 @@
 // per-device BSP DXEs
 FILE DRIVER = 8e9bd160-b184-11df-94e2-0800200c9a66 {
-    SECTION DXE_DEPEX = Dxe/Xiaomi/sweet/DALSYSDxe/DALSYSDxe.depex
-    SECTION PE32 = Dxe/Xiaomi/sweet/DALSYSDxe/DALSYSDxe.efi
+    SECTION DXE_DEPEX = Dxe/Xiaomi/surya/DALSYSDxe/DALSYSDxe.depex
+    SECTION PE32 = Dxe/Xiaomi/surya/DALSYSDxe/DALSYSDxe.efi
     SECTION UI = "DALSYSDxe"
 }
 
 FILE DRIVER = 5bd181db-0487-4f1a-ae73-820e165611b3 {
-    SECTION DXE_DEPEX = Dxe/Xiaomi/sweet/ButtonsDxe/ButtonsDxe.depex
-    SECTION PE32 = Dxe/Xiaomi/sweet/ButtonsDxe/ButtonsDxe.efi
+    SECTION DXE_DEPEX = Dxe/Xiaomi/surya/ButtonsDxe/ButtonsDxe.depex
+    SECTION PE32 = Dxe/Xiaomi/surya/ButtonsDxe/ButtonsDxe.efi
     SECTION UI = "ButtonsDxe"
 }
 
@@ -30,19 +30,19 @@ FILE DRIVER = 94f8a6a7-dc34-4101-88c1-99179cceae83 {
 }
 
 FILE DRIVER = 5776232E-082D-4B75-9A0E-FE1D13F7A5D9 {
-    SECTION DXE_DEPEX = Dxe/Xiaomi/sweet/PmicDxe/PmicDxeLa.depex
-    SECTION PE32 = Dxe/Xiaomi/sweet/PmicDxe/PmicDxeLa.efi
+    SECTION DXE_DEPEX = Dxe/sm7150/PmicDxe/PmicDxeLa.depex
+    SECTION PE32 = Dxe/sm7150/PmicDxe/PmicDxeLa.efi
     SECTION UI = "PmicDxe"
 }
 
 FILE DRIVER = 9A00771F-36D4-4DD5-8916-C48ED9B16B86 {
-    SECTION DXE_DEPEX = Dxe/Xiaomi/sweet/HALIOMMUDxe/HALIOMMUDxe.depex
-    SECTION PE32 = Dxe/Xiaomi/sweet/HALIOMMUDxe/HALIOMMUDxe.efi
+    SECTION DXE_DEPEX = Dxe/sm7150/HALIOMMU/HALIOMMU.depex
+    SECTION PE32 = Dxe/sm7150/HALIOMMU/HALIOMMU.efi
     SECTION UI = "HALIOMMU"
 }
 
 FILE FREEFORM = 7E374E25-8E01-4FEE-87F2-390C23C606CD {
-    SECTION RAW = F11/AcpiTables/sweet/DSDT.aml
+    SECTION RAW = F11/AcpiTables/surya/DSDT.aml
     SECTION RAW = F11/AcpiTables/7180/dbg2.acpi
     SECTION RAW = F11/AcpiTables/7180/bgrt.acpi
     SECTION RAW = F11/AcpiTables/7180/Csrt.acpi
@@ -60,5 +60,5 @@ FILE FREEFORM = 7E374E25-8E01-4FEE-87F2-390C23C606CD {
 
 // Mainline device tree blob
 # FILE FREEFORM = 25462CDA-221F-47DF-AC1D-259CFAA4E326 {
-# 	 SECTION RAW = FdtBlob/mainline/sweet/sm7150-xiaomi-sweet.dtb
+# 	 SECTION RAW = FdtBlob/mainline/surya/sm7150-xiaomi-surya.dtb
 # }

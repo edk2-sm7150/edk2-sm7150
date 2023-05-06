@@ -7,8 +7,6 @@ name: EDK2 SM7150
 on:
   push:
     branches: [master]
-  pull_request:
-    branches: [master]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -34,9 +32,15 @@ jobs:
           ./build_common.sh
           ./sweetbuild.sh
 
+      - name: Build device Poco X3 NFC
+        run: |
+          ./build_common.sh
+          ./suryabuild.sh
+
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3
-        with: # Artifact name
+        with:
           name: Redmi Note 10 Pro
-          # A file, directory or wildcard pattern that describes what to upload
           path: ./sweet_uefi.img
+          name: Poco X3 NFC
+          path: ./surya_uefi.img

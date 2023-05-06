@@ -9,7 +9,7 @@ GCC5_AARCH64_PREFIX=aarch64-linux-gnu- build -s -n 0 -a AARCH64 -t GCC5 -p F11/F
 
 gzip -c < Build/F11/DEBUG_GCC5/FV/F11_UEFI.fd >uefi_image
 
-cat 7150.dtb >>uefi_image
+cat FdtBlob/sm7150.dtb >>uefi_image
 
 abootimg --create uefi.img -k uefi_image -r ramdisk-null -f bootimg.cfg
 
