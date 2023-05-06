@@ -1,4 +1,3 @@
-// per-device BSP DXEs
 FILE DRIVER = 8e9bd160-b184-11df-94e2-0800200c9a66 {
     SECTION DXE_DEPEX = Dxe/Xiaomi/sweet/DALSYSDxe/DALSYSDxe.depex
     SECTION PE32 = Dxe/Xiaomi/sweet/DALSYSDxe/DALSYSDxe.efi
@@ -58,7 +57,6 @@ FILE FREEFORM = 7E374E25-8E01-4FEE-87F2-390C23C606CD {
     SECTION UI = "AcpiTables"
 }
 
-// Mainline device tree blob
 # FILE FREEFORM = 25462CDA-221F-47DF-AC1D-259CFAA4E326 {
 # 	 SECTION RAW = FdtBlob/mainline/sweet/sm7150-xiaomi-sweet.dtb
 # }
