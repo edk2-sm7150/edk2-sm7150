@@ -42,5 +42,9 @@ jobs:
         with:
           name: Redmi Note 10 Pro
           path: ./sweet_uefi.img
+
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3
+        with:
           name: Poco X3 NFC
           path: ./surya_uefi.img
