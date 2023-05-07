@@ -27,7 +27,7 @@
   FLASH_DEFINITION               = F11/F11.fdf
 
 !include F11/CommonDsc.dsc.inc
-!include F11/inc/sweet.inc
+# !include F11/inc/sweet.inc
 
 [LibraryClasses.common]
   ArmLib|ArmPkg/Library/ArmLib/ArmBaseLib.inf

@@ -137,6 +137,7 @@ READ_LOCK_STATUS   = TRUE
   INF MdeModulePkg/Universal/PCD/Dxe/Pcd.inf
   
   !include F11/inc/dxe.inc
+  !include F11/inc/surya.inc
 
   #
   # GPIO
