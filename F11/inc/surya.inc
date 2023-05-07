@@ -1,8 +1,8 @@
 // per-device BSP DXEs
 FILE DRIVER = 8e9bd160-b184-11df-94e2-0800200c9a66 {
-    SECTION DXE_DEPEX = Dxe/Xiaomi/surya/DALSYSDxe/DALSYSDxe.depex
-    SECTION PE32 = Dxe/Xiaomi/surya/DALSYSDxe/DALSYSDxe.efi
-    SECTION UI = "DALSYSDxe"
+    SECTION DXE_DEPEX = Dxe/Xiaomi/surya/DALSys/DALSys.depex
+    SECTION PE32 = Dxe/Xiaomi/surya/DALSys/DALSys.efi
+    SECTION UI = "DALSys"
 }
 
 FILE DRIVER = 5bd181db-0487-4f1a-ae73-820e165611b3 {
