@@ -30,8 +30,8 @@ FILE DRIVER = 94f8a6a7-dc34-4101-88c1-99179cceae83 {
 }
 
 FILE DRIVER = 5776232E-082D-4B75-9A0E-FE1D13F7A5D9 {
-    SECTION DXE_DEPEX = Dxe/sm7150/PmicDxe/PmicDxeLa.depex
-    SECTION PE32 = Dxe/sm7150/PmicDxe/PmicDxeLa.efi
+    SECTION DXE_DEPEX = Dxe/sm7150/PmicDxe/PmicDxe.depex
+    SECTION PE32 = Dxe/sm7150/PmicDxe/PmicDxe.efi
     SECTION UI = "PmicDxe"
 }
 
